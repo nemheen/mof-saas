@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "frontend/package.json", "use": "@vercel/static-build", "config": { "distDir": "build" } }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "https://nemheen-mof-backend.hf.space/$1" },
+    { "src": "/health",   "dest": "https://nemheen-mof-backend.hf.space/health" }
+  ]
+}
