@@ -1,0 +1,25 @@
+[debug] [2025-09-03T03:13:24.558Z] ----------------------------------------------------------------------
+[debug] [2025-09-03T03:13:24.562Z] Command:       /Users/nemekhbayarnomin/.nvm/versions/node/v22.18.0/bin/node /Users/nemekhbayarnomin/.nvm/versions/node/v22.18.0/bin/firebase init
+[debug] [2025-09-03T03:13:24.562Z] CLI Version:   14.15.1
+[debug] [2025-09-03T03:13:24.562Z] Platform:      darwin
+[debug] [2025-09-03T03:13:24.562Z] Node Version:  v22.18.0
+[debug] [2025-09-03T03:13:24.563Z] Time:          Wed Sep 03 2025 12:13:24 GMT+0900 (Korean Standard Time)
+[debug] [2025-09-03T03:13:24.563Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-03T03:13:24.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-03T03:13:24.828Z] > authorizing via signed-in user (octas.proj@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nemekhbayarnomin/Documents/Intern/mof/mof-application/mof-dashboard
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
