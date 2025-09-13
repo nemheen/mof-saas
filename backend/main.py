@@ -983,34 +983,3 @@ async def export_json(payload: ExportPayload, current_user: User = Depends(get_c
     return PlainTextResponse(buf, headers=headers, media_type="application/json")
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
-            await firebase_crud.add_user_activity(
-                user_id=str(u_id),  # ensure string
-                activity_type="Image Search (Gemini Vision)",
-                details=_json_safe(details),  # ensure JSON/Firestore safe
-            )
-            except Exception as e:
-                # Keep it quiet to avoid 500s; print if you want server-side diagnostics
-                # print(f"[image_search] history log failed: {e}")
-                pass
-
-        asyncio.create_task(_log_activity(
-            current_user.id,
-            {
-                "filename": file.filename or "",
-                "mime_type": file.content_type or "",
-                "response_summary": (response_text[:100] + "...") if isinstance(response_text, str) and len(response_text) > 100 else response_text
-            }
-        ))
-
-        # 3) Return the vision result (regardless of logging outcome)
-        return {"response": response_text}
-
-    except HTTPException:
-        raise
-    except Exception as e:
-        # Anything else bubbles as a 500 with a clear message for the UI
-        raise HTTPException(status_code=500, detail=f"Image search failed: {e}")
-
