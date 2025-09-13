@@ -1,4 +1,5 @@
 #!/bin/sh
+set -o pipefail
 # POSIX-safe start script for Railway
 set -eu  # no pipefail in /bin/sh
 
