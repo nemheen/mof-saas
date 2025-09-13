@@ -1,0 +1,12 @@
+# nixpacks.toml (root)
+[phases.setup]
+# Install Python + pip (and Node if you ever need it)
+nixPkgs = ["python311", "pip"]
+
+[phases.install]
+# Install your backend deps (monorepo-safe)
+cmds = ["pip install -r backend/requirements.txt"]
+
+[start]
+# Start the backend
+cmd = "cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
