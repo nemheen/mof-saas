@@ -1,7 +1,7 @@
 #!/bin/sh
 # start.sh — POSIX bootstrap for Railway Shell runtime (no pip/ps)
 set -eu
-
+echo "### NEMHEEN SCRIPT ACTIVE: $(date) ###"
 echo "=== BOOT: start.sh (uv bootstrap) v1 ==="
 
 SERVICE="${SERVICE:-backend}"
