@@ -62,11 +62,12 @@ app = FastAPI(
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://mof-saas.onrender.com"
 ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"^https?://.*\.hf\.space$",
+    allow_origins=origins,  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
